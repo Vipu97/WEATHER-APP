@@ -7,7 +7,7 @@ const KEY = "7efc66e8afa7a5986b9eae5e974ecb9d"
 
 async function getCoordinates(city) {
   try {
-    const res = await fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${city}&appid=${KEY}`)
+    const res = await fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${city}&appid=${KEY}`)
     if (!res.ok) {
       console.log(`City not found: ${city}`);
       return;
