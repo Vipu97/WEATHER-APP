@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+.App{
+  width: 100%;
+  margin: auto;
+  height: 100vh;
+  background-image: url('images/background1.jpg');
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container{
+  width:750px;
+  height: 90%;
+  display: flex;
+}
+.loader{
+  width: 100%;
+  background-color: black;
+  opacity: 0.7;
+  height: 100%;
+  text-align: center;
+  color: white;
+}
+.loader h3{
+  margin-top: 10px;
+  font-weight: 300;
+}
+.display-part{
+  background-image: url('images/city1.jpg');
+  background-size: cover;
+  width: 70%;
+  height: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding:1rem 1.5rem;
+}
+
+header{
+  text-align: end;
+}
+header > h3{
+  font-weight: 500;
+}
+footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.date-section .time{
+  font-size: 1.7rem;
+  padding-bottom: 5px;
+}
+.date-section .date{
+  font-size: 1rem;
+  font-weight: 300;
+  margin-top:7px;
+}
+.temperature h1{
+  font-size: 3.4rem;
+  font-weight: 300;
+}
+.temperature span{
+  font-size: 1.8rem;
+}
+
+.search-part{
+  background-color: black;
+  width: 40%;
+  height: 100%;
+  opacity: 0.7;
+  text-align:center;
+  padding:1rem;
+  color: #fff;
+}
+.search-part > h1{
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  font-weight: 400;
+  margin:10px 0;
+}
+.search{
+  padding: 10px 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.search > input{
+  border: none;
+  border-bottom: 1px solid #CCC;
+  color: #fff;
+  background-color: transparent;
+  padding:10px;
+  font-size: 0.9rem;
+  outline: none;
+  transition: all 0.2s ease-out;
+}
+.search > input ::placeholder{
+  color: #fff;
+}
+.search > input:hover{
+  transform: scale(1.03);
+}
+.search > .search-icon{
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding-left: 5px;
+  transition: all 0.2s ease-out;
+  cursor:pointer;
+}
+.search > .search-icon:hover{
+  transform: scale(1.2);
+  opacity: 0.7;
+}
+.search-part ul{
+  margin-top: 13px;
+}
+.search-part li{
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #ccccccc5;
+  padding:8px 0px;
+}
